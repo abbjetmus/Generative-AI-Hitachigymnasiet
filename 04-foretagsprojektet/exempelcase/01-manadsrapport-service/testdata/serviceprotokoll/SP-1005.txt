@@ -1,0 +1,9 @@
+SERVICEPROTOKOLL SP-1005   (PÅHITTAD TESTDATA för övning)
+datum: 14/10
+fastighet: Lönnen 2
+aggregat: VP-8
+akut, larm E04 igen
+Kondensorn ren den här gången. Mätt flöde köldbärare, för lågt. Luftat systemet,
+flödet bättre men inte bra. Misstänker cirkulationspumpen. Behöver återbesök.
+reservdelar: inga
+tid: 2 h   tekn: T01

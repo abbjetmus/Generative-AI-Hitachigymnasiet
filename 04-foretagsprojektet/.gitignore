@@ -1,0 +1,3 @@
+# Företagets riktiga data ska ligga utanför repot.
+# Om den ändå hamnar här, i en mapp som heter foretagsdata, följer den inte med till git.
+foretagsdata/

@@ -1,122 +1,95 @@
-# Generativ AI - Kurs Hitachigymnasiet
+# Generativ AI – från första anropet till AI-lösningar för företag
 
-## Om kursen
+Det här materialet tar dig från "vad är en språkmodell?" hela vägen till att
+utreda, bygga och demonstrera en AI-lösning för ett riktigt företag.
 
-Denna kurs introducerar **Generativ AI** - en av de mest omvälvande teknologierna i modern tid. Sedan lanseringen av ChatGPT i november 2022 har generativ AI fångat uppmärksamheten hos individer, företag och regeringar världen över.
+Du lär dig först hur generativ AI fungerar och hur man bygger med språkmodeller
+från JavaScript. Sedan lär du dig tänka som den som ansvarar för en AI-lösning:
+vilken data det gäller, vilka lagar som styr och var modellen får köras.
+Till sist får din grupp ett case från ett företag som ni löser och visar upp.
 
-Kursen bygger på kursmaterialet från Microsoft:
-**[Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript)**
+## Kursens upplägg
 
-## Vad är Generativ AI?
+| Modul | Innehåll |
+|-------|----------|
+| [01 – Generativ AI](01-generativ-ai/) | Vad en språkmodell är, ditt första anrop, chatt och systemprompt, promptteknik och strukturerad utdata (JSON) |
+| [02 – Bygga med AI](02-bygga-med-ai/) | Rapporter från befintliga rapporter, RAG med sökning och embeddings, verktygsanrop, agenter, MCP och agenter i Microsoft 365 |
+| [03 – AI-lösningar för företag](03-ai-losningar-for-foretag/) | Från behov till lösning, säkerhetsnivåer, lagar och regler, var modellen körs, lokala modeller och risker, test och ansvar |
+| [04 – Företagsprojektet](04-foretagsprojektet/) | Utred ett case från ett företag, bygg lösningen med företagets testdata och demonstrera den |
 
-Generativ AI är en typ av artificiell intelligens som kan skapa nytt innehåll - text, bilder, ljud och kod. Till skillnad från traditionell AI, som analyserar och klassificerar data, kan generativ AI **producera** helt nytt material baserat på mönster den lärt sig från enorma mängder data.
+Läs modulerna i ordning. Varje modul har en `README.md` med
+innehållsförteckning och numrerade kapitel. Övningarna står i slutet av varje
+kapitel, och lösningsförslagen finns i `losningar.md` i varje modul. Försök
+själv först.
 
-### Exempel på generativ AI
+```mermaid
+flowchart LR
+  A[01 Generativ AI] --> B[02 Bygga med AI]
+  B --> C[03 AI-lösningar för företag]
+  C --> D[04 Företagsprojektet]
+  D --> D1[Utredning] --> D2[Bygga] --> D3[Demonstration]
+```
 
-- **ChatGPT** (OpenAI) - Textgenerering och konversation
-- **DALL-E / Midjourney** - Bildgenerering från textbeskrivningar
-- **GitHub Copilot** - Kodgenerering och programmeringshjälp
-- **Claude** (Anthropic) - Textgenerering, analys och kodning
+## Det gemensamma exemplet: Nordverk AB
 
-## Hur fungerar det?
+Genom modul 01 och 02 bygger du stegvis **Nordverk-assistenten** åt det
+påhittade företaget Nordverk AB, som tillverkar och servar industripumpar.
+Assistenten svarar på kundfrågor, plockar ut fakta ur serviceprotokoll, skriver
+månadsrapporter, söker i manualer och använder verktyg. Företaget och all data
+i [`data/nordverk/`](data/nordverk/) är påhittade.
 
-Generativ AI bygger på **stora språkmodeller** (Large Language Models, LLMs). Dessa modeller har tränats på enorma mängder text från internet och har lärt sig att förutsäga nästa ord i en mening. Genom att upprepade gånger förutsäga nästa ord kan de generera sammanhängande och meningsfull text.
+I modul 03 och 04 byter du perspektiv. Nu är frågan inte bara *hur* du bygger,
+utan *om* och *var* det är lämpligt att bygga, utifrån datans säkerhetsnivå.
 
-### Nyckelbegrepp
+## AI-tjänsten: Aixia
 
-| Begrepp | Förklaring |
-|---|---|
-| **LLM** | Large Language Model - en stor språkmodell tränad på enorma mängder text |
-| **Prompt** | Den text/instruktion du skickar till AI:n |
-| **Token** | Minsta enheten som modellen arbetar med (ungefär en ordbit) |
-| **Hallucination** | När AI:n hittar på information som låter övertygande men är felaktig |
-| **Fine-tuning** | Att anpassa en befintlig modell till en specifik uppgift |
-| **RAG** | Retrieval Augmented Generation - ger AI:n tillgång till externa datakällor |
-| **API** | Application Programming Interface - hur program kommunicerar med AI-modeller |
+Kodexemplen använder språkmodeller hos **Aixia** via ett API som fungerar som
+OpenAI:s. Läraren delar ut en nyckel per grupp.
 
-## Vad kan generativ AI användas till?
+| Modell | Används till |
+|--------|--------------|
+| `gpt-oss-120b` | Chatt, text, JSON och agenter |
+| `bge-m3` | Embeddings till RAG |
 
-### Skriva (Writing)
-- Brainstorming och idégenerering
-- Skriva marknadsföringstexter, e-post och rapporter
-- Översättning mellan språk
-- Kodgenerering
-
-### Läsa (Reading)
-- Korrekturläsning och grammatikkontroll
-- Sammanfattning av långa texter
-- Klassificering (t.ex. positiv/negativ sentiment)
-- Kategorisering av e-post och ärenden
-
-### Chatta (Chatting)
-- Kundtjänst-chatbotar
-- IT-support
-- Rådgivning och vägledning
-- Interaktiva hjälpsystem
-
-## Begränsningar att vara medveten om
-
-- **Kunskapsgräns** - Modellen vet bara det den tränats på
-- **Hallucinationer** - AI:n kan hitta på saker som låter trovärdiga
-- **Begränsad indata** - Det finns gränser för hur mycket text den kan bearbeta
-- **Svag med strukturerad data** - Tabeller och kalkylblad hanteras bättre med andra verktyg
-- **Bias** - Modellen kan spegla fördomar från träningsdata
-
-## Kursmål
-
-Efter avslutad kurs ska du kunna:
-
-1. Förklara vad generativ AI är och hur det fungerar
-2. Använda promptteknik för att få bättre resultat från AI-modeller
-3. Förstå möjligheter och begränsningar med generativ AI
-4. Bygga applikationer med hjälp av AI och JavaScript
-5. Tänka kritiskt kring AI:s påverkan på samhället
-
-## Kursupplägg
-
-### Del 1: Grunderna i Generativ AI
-- Vad är AI och generativ AI?
-- Hur fungerar stora språkmodeller (LLMs)?
-- Användningsområden: skriva, läsa, chatta
-- Begränsningar och risker
-- Promptteknik - hur du skriver bra instruktioner
-
-### Del 2: Bygga med Generativ AI
-Genomgång av kursmaterialet från Microsoft:
-**[Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript)**
-
-Materialet innehåller praktiska övningar och projekt som täcker:
-- Att komma igång med AI-API:er
-- Promptteknik i praktiken
-- Bygga AI-drivna applikationer med JavaScript
-- Arbeta med text, bilder och andra modaliteter
-
-### Del 3: Eget projekt
-Som avslutning bygger varje elev (eller grupp) en **egen applikation** baserad på vad de lärt sig under kursen. Projektet ska:
-
-- Använda en AI-modell (via API)
-- Vara byggd med JavaScript
-- Lösa ett verkligt eller kreativt problem
-- Presenteras för klassen
-
-#### Projektidéer
-- En chatbot för ett specifikt ämne (t.ex. historiehjälp, matlagning)
-- En app som sammanfattar nyhetsartiklar
-- Ett verktyg som hjälper till med studieteknik
-- En kreativ skrivassistent
-- En bildgenereringsapp med textprompts
-- Ett quizspel som genererar frågor med AI
+Samma kod fungerar mot en lokal modell i [Ollama](https://ollama.com/). Då
+byter du bara adress och modellnamn i `.env`, se modul 03.
 
 ## Kom igång
 
-1. Skapa ett konto på [GitHub](https://github.com) om du inte redan har ett
-2. Utforska kursmaterialet: [Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript)
-3. Installera [Node.js](https://nodejs.org/) och [VS Code](https://code.visualstudio.com/)
-4. Följ instruktionerna i kursmaterialet steg för steg
+1. Installera [Node.js](https://nodejs.org/) version 22 eller senare (LTS) och [VS Code](https://code.visualstudio.com/).
+2. Klona repot och öppna det i VS Code.
+3. Kopiera `.env.example` till `.env` i repots rotmapp och fyll i nyckeln du fått av läraren.
+4. Kör `npm install` i rotmappen.
+5. Börja med [modul 01](01-generativ-ai/).
 
-## Resurser
+Kodexemplen är små **Vue-projekt**, som `kvittra-vue` i kursen om databaser.
+Du startar dem med `npm install` och `npm run dev` i projektets mapp. Några
+exempel som måste köras på servern, till exempel MCP-servern, är Node-skript
+som du kör med `node` från rotmappen.
 
-- [Microsoft Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript) - Huvudsakligt kursmaterial
-- [OpenAI API Dokumentation](https://platform.openai.com/docs)
-- [Anthropic Claude Dokumentation](https://docs.anthropic.com)
-- [GitHub Copilot](https://github.com/features/copilot)
+## Nyckeln är din grupps ansvar
+
+⚠️ API-nyckeln är ett lösenord. Den får aldrig ligga i kod som läggs på GitHub
+och aldrig i kod som körs i webbläsaren.
+
+- Nyckeln står bara i `.env`, och `.env` står i `.gitignore`.
+- Vue-projekten skickar sina anrop via utvecklingsservern. Den lägger på
+  nyckeln på din dator, så nyckeln syns aldrig i webbläsaren. Hur det fungerar
+  står i [`gemensam/ai-vite.js`](gemensam/ai-vite.js) och förklaras i modul 01.
+- Har nyckeln hamnat på fel ställe ska du säga till läraren direkt, så att den
+  kan spärras.
+
+## Mappar
+
+| Mapp | Innehåll |
+|------|----------|
+| `gemensam/` | AI-klienten för Node-skript (`ai.js`), Vite-pluginet som skyddar nyckeln (`ai-vite.js`) och en mall för nya Vue-projekt (`vue-mall/`) |
+| `data/nordverk/` | Påhittade manualer, serviceprotokoll och kundärenden |
+| `presentation/` | Introduktionspresentation om generativ AI |
+
+## Inspiration
+
+Upplägget är inspirerat av Microsofts kurs
+[Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript),
+som tar upp liknande ämnen i en annan form. Den finns på engelska om du vill
+läsa vidare.

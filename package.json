@@ -1,0 +1,12 @@
+{
+  "name": "generativ-ai-hitachigymnasiet",
+  "private": true,
+  "type": "module",
+  "description": "Kursmaterial i generativ AI: från första anropet till AI-lösningar för företag",
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "openai": "^7.60.0",
+    "zod": "^4.6.7"
+  }
+}
