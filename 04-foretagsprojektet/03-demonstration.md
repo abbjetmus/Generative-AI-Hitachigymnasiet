@@ -58,13 +58,3 @@ Vet ni inte svaret: säg det, och lova att återkomma.
 
 Skriv en kort reflektion i gruppens repo: vad företaget tyckte, vad ni skulle göra
 annorlunda och vad ni lärde er. Radera företagets data enligt utredningen.
-
-## Övningar
-
-**3.1** Gör en demoplan i [mallen](mallar/demo.md) för ett av exempelcasen.
-
-**3.2** Håll demon för en annan grupp som låtsas vara företaget. Den andra gruppen
-ställer minst tre frågor från listan ovan.
-
-**3.3** Öva reservplanen: stäng av nätet mitt i demon och fortsätt med det sparade
-resultatet.

@@ -125,27 +125,4 @@ riktig.
 - Skolans nivåer: 1 Öppen, 2 Intern, 3 Känslig, 4 Skyddsvärd. Högsta nivån styr.
 - Ta bort namn och annat som inte behövs innan du skickar data till en modell.
 
-## Övningar
-
-**2.1** Vilken nivå (1–4) har uppgiften? Motivera kort.
-
-1. Nordverks produktblad på webbplatsen.
-2. En lista över de anställdas sjukfrånvaro.
-3. Nordverks interna rutin för att boka servicebesök.
-4. En offert med pris och rabatt till en kund.
-5. Påhittade kundärenden som du själv skrivit.
-6. En ritning från ett försvarsprojekt.
-7. Antal servicebesök per månad, utan namn.
-8. Ett kundmejl med kontaktpersonens namn och mobilnummer.
-
-**2.2** Pseudonymisera ärende K-101 i
-[`data/nordverk/kundarenden.json`](../data/nordverk/kundarenden.json). Vad
-byter du ut? Blir texten anonym?
-
-**2.3** Bedöm K, R och T som *låg*, *medel* eller *hög* för Nordverks
-månadsrapport. Vad betyder R-bedömningen för hur lösningen ska byggas?
-
-**2.4** Ett företag vill att AI ska sammanfatta jobbansökningar. Vilken
-nivå har datan? Kan något i en ansökan göra den ännu känsligare?
-
 Nästa kapitel: [Lagar och regler](03-lagar-och-regler.md)

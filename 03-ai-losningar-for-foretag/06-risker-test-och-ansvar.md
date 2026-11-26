@@ -186,8 +186,10 @@ exempel till Ollama i kapitel 5.
 
 > **Obs!** Aixias tjänst sparar svaret på en **exakt likadan** fråga en kort
 > stund och skickar samma svar igen. Kör du testerna två gånger direkt efter
-> varandra får du därför samma resultat på en tiondels sekund. Hur du testar
-> på riktigt flera gånger ser du i övning 6.4.
+> varandra får du därför samma resultat på en tiondels sekund. Vill du köra
+> varje test flera gånger på riktigt skickar du med
+> `cache: { 'no-cache': true }` i anropet i `bedom()`. Då stängs den sparade
+> svarskopian av.
 
 ## Dokumentation och transparens
 
@@ -216,28 +218,5 @@ får veta att det är en AI (kapitel 3).
 - Det säkraste sättet att inte läcka något är att inte ge modellen det.
 - Testa med testfall: indata, förväntat resultat och en kontroll. Kör dem igen vid varje ändring.
 - Dokumentera vad lösningen gör, inte gör och vem som ansvarar.
-
-## Övningar
-
-**6.1** Kör startkoden och försök själv få assistenten att avslöja timpriset
-eller lova gratis arbete. Skriv ner två försök: ett som lyckades och ett som
-misslyckades.
-
-**6.2** Lägg till skydden från kapitlet i `src/App.vue` (eller kopiera
-facit). Kör samma två försök igen. Vad hände?
-
-**6.3** Lägg till två egna testfall i `testfall`: ett vanligt ärende och en
-ny attack som du hittar på. Kör alla testfall.
-
-**6.4** Kör varje testfall tre gånger för att se om resultatet varierar.
-Tips: skicka med `cache: { 'no-cache': true }` i anropet i `bedom()`. Det är
-en inställning som Aixias tjänst förstår och som stänger av den sparade
-svarskopian.
-
-**6.5** Testa bias: kör ärende K-102 med underskriften "/Tomas Ek". Skriv
-sedan samma ärende på engelska med ett namn som låter utländskt. Får ärendet samma prioritet och ett lika vänligt utkast? Gör ett
-testfall av det.
-
-**6.6** Skriv ett faktablad för din lösning från övning 1.4.
 
 Nästa kapitel: modul 04 – [Företagsprojektet](../04-foretagsprojektet/README.md)

@@ -51,9 +51,6 @@ caset har och välja en lösning som passar.
 |---------|------------|
 | [06 – Risker, test och ansvar](06-risker-test-och-ansvar.md) | Angriper en naiv assistent i Vue-projektet [`riskverkstad`](riskverkstad/), täpper till hålen och skriver testfall |
 
-Lösningsförslag till övningarna finns i [losningar.md](losningar.md).
-Försök själv först!
-
 Om skolan eller företaget använder Microsoft 365 kan du också läsa
 [kapitel 7 i modul 02 – Agenter i Microsoft 365](../02-bygga-med-ai/07-agenter-i-microsoft-365.md).
 Där ser du hur samma tankar om säkerhetsnivåer används när man bygger agenter
@@ -70,7 +67,7 @@ kundärenden. Alla kunder, personer och serienummer är påhittade.
 
 - Modul 01 och 02 (du ska kunna anropa en språkmodell från kod och från Vue)
 - Node.js och repots `.env` med nyckeln du fått av läraren
-- För kapitel 5: en dator där du får installera program, gärna med minst 16 GB minne. Har du inte det kan du läsa kapitlet och göra övningarna med en mindre modell, eller arbeta tillsammans med någon som har en sådan dator.
+- För kapitel 5: en dator där du får installera program, gärna med minst 16 GB minne. Har du inte det kan du läsa kapitlet och prova med en mindre modell, eller arbeta tillsammans med någon som har en sådan dator.
 - Kod i modulen:
   - [`riskverkstad/`](riskverkstad/) – Vue-projekt för kapitel 6
   - [`kod/jamfor-modeller.js`](kod/jamfor-modeller.js) – skript som jämför modeller i kapitel 5

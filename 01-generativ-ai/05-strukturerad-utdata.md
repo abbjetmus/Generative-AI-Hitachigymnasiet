@@ -251,27 +251,4 @@ människan bestämmer.
 - Schemat garanterar formen, inte innehållet. **Kontrollera** svaret och
   hantera fel med `try` och `catch`.
 
-## Övningar
-
-Skriv koden i `src/Serviceprotokoll.vue`. Lösningsförslag finns i
-[losningar.md](losningar.md#kapitel-5--strukturerad-utdata).
-
-**5.1** Tolka det här slarviga protokollet. Vad blev bra, och vad blev sämre?
-
-```
-Service NV900 hos Brobyverken 3 okt. ingen felkod, årlig service.
-bytte filter x2 och olja 5 liter. /Ali
-```
-
-**5.2** Lägg till fältet `tekniker` (vem som gjorde jobbet). Du behöver ändra
-på tre ställen: `properties`, `required` och tabellen i `<template>`.
-
-**5.3** Visa en varning om felkoden inte ser ut som ett `E` följt av två
-siffror, till exempel `E07`. Tips: mönstret är `/^E\d{2}$/`. Tänk på att
-felkoden kan vara `null`.
-
-**5.4** Lägg till ett fält `arProtokoll` med typen `boolean` (sant eller
-falskt), som säger om texten verkligen är ett serviceprotokoll. Visa inte
-tabellen om det är `false`, utan ett meddelande. Testa med *"hej hur mår du"*.
-
 Nästa modul: [Bygga med AI](../02-bygga-med-ai/README.md)

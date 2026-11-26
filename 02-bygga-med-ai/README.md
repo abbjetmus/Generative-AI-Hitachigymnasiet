@@ -37,8 +37,6 @@ påhittade.
 | [06 – MCP](06-mcp.md) | Gör Nordverks verktyg tillgängliga för alla AI-program |
 | [07 – Agenter i Microsoft 365](07-agenter-i-microsoft-365.md) | Ser hur färdiga agenter fungerar i Microsoft 365 |
 
-Lösningsförslag finns i [losningar.md](losningar.md). Försök själv först!
-
 ## Projektet
 
 Kapitel 1–5 bygger vidare på Vue-projektet

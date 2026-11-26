@@ -339,18 +339,4 @@ modellens prompt, så en elak server kan försöka styra modellen.
 | stdio | Klienten startar servern och de pratar via in- och utdata |
 | `listTools` / `callTool` | Fråga vilka verktyg som finns / kör ett verktyg |
 
-## Övningar
-
-Lösningar finns i [losningar.md](losningar.md#kapitel-6--mcp).
-
-**6.1** Kör `mcp-klient.js`. Ändra sedan klienten så att den anropar
-`hamtaServicehistorik` för `NV200-2023-0390`.
-
-**6.2** Lägg till ett verktyg `hamtaKundarende` i servern som tar ett id, t.ex.
-`K-103`, och returnerar ärendet från `kundarenden.json`. Kör `mcp-klient.js` och
-kontrollera att det syns i listan.
-
-**6.3** Fråga `mcp-klient-llm.js` om *"Vad gäller ärende K-103 och vad betyder
-felkoden?"*. Används ditt nya verktyg? Du behövde inte ändra något i klienten.
-
 Nästa kapitel: [Agenter i Microsoft 365](07-agenter-i-microsoft-365.md)

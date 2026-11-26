@@ -34,14 +34,14 @@ flowchart LR
 
 | Fas | Vad ni gör | Kapitel | Det här lämnar ni in |
 |---|---|---|---|
-| 1. Lära | Går igenom modul 01–03 och övar på ett [exempelcase](exempelcase/) | Modul 01–03 | Övningarna |
+| 1. Lära | Går igenom modul 01–03 och provar på ett [exempelcase](exempelcase/) | Modul 01–03 | – |
 | 2. Utreda | Läser caset, klassar datan, väljer driftalternativ, ställer frågor | [01 – Utredningen](01-utredning.md) | [Utredning](mallar/utredning.md) |
 | 3. Bygga | Bygger lösningen och testar den med testdata | [02 – Bygga lösningen](02-bygga-losningen.md) | Lösningen, testprotokoll, README |
 | 4. Demonstrera | Visar lösningen för företaget | [03 – Demonstrationen](03-demonstration.md) | [Demoplan](mallar/demo.md) och demo |
 
 I modulen finns också ett [startprojekt](startprojekt/) i Vue,
 [mallar](mallar/) och tre [exempelcase](exempelcase/) med påhittad data.
-Lösningsförslag finns i [losningar.md](losningar.md). Försök själv först!
+Lärarstöd till exempelcasen finns i [lararstod.md](lararstod.md).
 
 ## Arbete i grupp
 

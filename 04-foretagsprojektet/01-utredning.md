@@ -148,23 +148,4 @@ ett stöd för människan i stället för något som beslutar) eller **bygg inte
 
 Lämna sedan in utredningen till läraren.
 
-## Övningar
-
-**1.1** Läs de tre fallen i [exempelcase](exempelcase/). Ge varje case en
-säkerhetsnivå och ett driftalternativ. Motivera med en mening.
-
-**1.2** I [exempelcase 2](exempelcase/02-kundarenden/) har varje ärende fälten
-`namn`, `epost`, `telefon`, `order` och `text`. Vilka behöver modellen? Finns
-det personuppgifter kvar i `text`?
-
-**1.3** [Exempelcase 3](exempelcase/03-teknisk-dokumentation/) innehåller
-exportkontrollerad teknik. Vilka driftalternativ är tillåtna? Hur kan gruppen öva
-om ingen dator klarar en lokal modell?
-
-**1.4** Skriv tre risker med åtgärder för [exempelcase 2](exempelcase/02-kundarenden/).
-Läs ärende K-2210 först.
-
-**1.5** Gör en hel utredning av ett exempelcase med [mallen](mallar/utredning.md).
-Byt med en annan grupp och granska varandras klassning.
-
 Nästa kapitel: [Bygga lösningen](02-bygga-losningen.md)

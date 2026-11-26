@@ -190,16 +190,4 @@ och låt en människa godkänna allt som ändrar något eller påverkar en kund.
 | Godkännande | En människa säger ja innan något skrivs |
 | Prompt injection | Text i datan som försöker styra modellen |
 
-## Övningar
-
-Lösningar finns i [losningar.md](losningar.md#kapitel-5--agenter).
-
-**5.1** Kör agenten på K-108, K-101 och K-110. Godkänn den första, neka den sista.
-Vad skriver agenten till kunden när du nekar?
-
-**5.2** Ge agenten funktionen `sokIManualer` från övning 4.2. Kör K-102 igen.
-Blir svaret rätt nu?
-
-**5.3** Sätt `MAX_STEG` till 2 och kör K-108. Vad händer?
-
 Nästa kapitel: [MCP](06-mcp.md)

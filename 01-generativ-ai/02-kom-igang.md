@@ -41,8 +41,6 @@ filen `.env.example` som heter `.env`:
 copy .env.example .env
 ```
 
-(På Mac: `cp .env.example .env`.)
-
 Öppna `.env` och byt `sk-din-nyckel-har` mot nyckeln från läraren. Spara.
 
 ```ini
@@ -236,31 +234,5 @@ igen.
 - Ett anrop är en lista med **meddelanden** med rollerna `system`, `user` och
   `assistant`.
 - Svaret innehåller texten, `finish_reason` och `usage` (antal tokens).
-
-## Övningar
-
-Skriv all kod i `src/App.vue`. Lösningsförslag finns i
-[losningar.md](losningar.md#kapitel-2--kom-igång).
-
-**2.1** Öppna **F12 → Network** och skicka en fråga. Klicka på anropet
-`completions` och leta upp `Authorization` under **Request Headers**. Vad står
-där? Varför är det ofarligt?
-
-**2.2** Ändra systemprompten så att assistenten svarar som en gammal
-sjökapten.
-
-**2.3** Fråga *"Vad gör företaget Nordverk AB i Västerås?"*. Stämmer svaret?
-Vad kallas det som händer?
-
-**2.4** Visa antalet tokens på sidan i stället för hela JSON-svaret:
-
-```html
-<p v-if="helaSvaret">Tokens in: {{ helaSvaret.usage.prompt_tokens }}</p>
-```
-
-Visa också `completion_tokens` på samma sätt.
-
-**2.5** Jämför `prompt_tokens` när du skickar samma mening på svenska och på
-engelska.
 
 Nästa kapitel: [Chatt och systemprompt](03-chatt-och-systemprompt.md)

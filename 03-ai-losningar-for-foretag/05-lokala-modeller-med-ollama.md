@@ -168,26 +168,4 @@ då kan andra i nätverket använda din modell.
 - Byt `AI_BASE_URL`, `AI_API_KEY` och `AI_MODEL` i `.env`, så kör samma kurskod mot Ollama.
 - Jämför kvalitet och hastighet med samma uppgifter mot båda.
 
-## Övningar
-
-**5.1** Ta reda på hur mycket minne din dator har (och grafikminne om du har
-ett grafikkort). Vilken av modellerna i tabellen tror du fungerar bäst?
-
-**5.2** Installera Ollama, ladda ner en modell som passar din dator och
-`bge-m3`. Kör `jamfor-modeller.js` mot både Aixia och Ollama. Fyll i
-tabellen:
-
-| | Aixia `gpt-oss-120b` | Ollama `...` |
-|---|---|---|
-| Godkända uppgifter | | |
-| Token per sekund | | |
-| Total tid | | |
-
-**5.3** Kör `ollama ps` medan modellen svarar. Står det `100% GPU`? Vad
-betyder det för hastigheten om det inte gör det?
-
-**5.4** Nordverk funderar på att köra en lokal modell på en server i stället
-för att använda Aixia. Skriv två fördelar och två nackdelar utifrån det du
-mätte.
-
 Nästa kapitel: [Risker, test och ansvar](06-risker-test-och-ansvar.md)

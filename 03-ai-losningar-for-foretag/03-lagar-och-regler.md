@@ -179,29 +179,4 @@ datan får användas för att träna modeller. Fråga företaget.
 - AI-förordningen: chattbotar ska säga att de är AI. Rekrytering och betygsättning är högrisk.
 - Säkerhetsskydd och exportkontroll betyder nivå 4. Då bestämmer företaget.
 
-## Övningar
-
-**3.1** Nordverk låter en ärendeassistent hos Aixia läsa kundärenden. Vem
-är personuppgiftsansvarig, vem är biträde, och vilket avtal behövs?
-
-**3.2** Vilken grundregel i GDPR bryter man mot?
-
-1. Hela kunddatabasen skickas till modellen för att sammanfatta tre ärenden.
-2. Alla frågor och svar sparas för alltid "ifall de behövs".
-3. Supportärenden används för att träna en säljbot.
-
-**3.3** Vilken riskklass enligt AI-förordningen?
-
-1. En chattbot på Nordverks webbplats som svarar på frågor om pumpar.
-2. Ett system som väljer vilka jobbsökande som kallas till intervju.
-3. En kamera som mäter om anställda ser glada ut.
-4. Ett verktyg som rättar stavfel i serviceprotokoll.
-
-**3.4** Förklara med två eller tre meningar varför ett svenskt företag kan
-tveka att använda en amerikansk molntjänst, även om datan lagras i Sverige.
-
-**3.5** Sök upp aktuell status för EU–US Data Privacy Framework på
-[imy.se](https://www.imy.se/). Har något ändrats sedan kapitlet skrevs?
-Ange källan.
-
 Nästa kapitel: [Var körs modellen?](04-var-kors-modellen.md)

@@ -142,26 +142,4 @@ I modul 04 skriver du en sådan skiss för ditt företagscase.
 - Datan och dess säkerhetsnivå styr vilka lösningar som är möjliga.
 - Bygg en liten prototyp med testdata och testa den med testfall.
 
-## Övningar
-
-**1.1** Skulle du använda en språkmodell, vanlig kod eller båda? Motivera kort.
-
-1. Räkna hur många servicebesök Nordverk gjorde i oktober.
-2. Sortera kundmejl i *fråga*, *klagomål* och *beställning*.
-3. Räkna ut en faktura utifrån timmar och timpris.
-4. Skriva ett utkast till svar på ett klagomål.
-5. Bestämma vilken tekniker som ska få löneförhöjning.
-
-**1.2** Läs kundärende K-109 i
-[`data/nordverk/kundarenden.json`](../data/nordverk/kundarenden.json).
-Skriv behovet i en mening.
-
-**1.3** Ett företag säger: *"Vi vill att AI läser våra offertförfrågningar
-och skriver ett prisförslag."* Vilka tre frågor från listan ställer du
-först? Varför?
-
-**1.4** Börja på en lösningsskiss för behovet *"Nya medarbetare på
-Nordverks kundtjänst ska snabbt hitta svar i pumpmanualerna."* Lämna
-Säkerhetsnivå och Driftalternativ tomma. Du fyller i dem efter kapitel 4.
-
 Nästa kapitel: [Data och säkerhetsnivåer](02-data-och-sakerhetsnivaer.md)

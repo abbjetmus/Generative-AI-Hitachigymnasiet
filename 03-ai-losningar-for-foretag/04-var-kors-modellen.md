@@ -169,24 +169,4 @@ säkerhetsåtgärder. I skolprojekt är det rätt att vara försiktig.
 - D (lokalt) ger mest kontroll men kräver hårdvara och eget säkerhetsansvar.
 - Använd beslutsmatrisen och motivera ditt val.
 
-## Övningar
-
-**4.1** Välj driftalternativ för varje case och motivera med nivå och
-matris.
-
-1. En app som översätter Nordverks publicerade produktblad till engelska.
-2. En assistent som läser offerter med kundpriser.
-3. En sammanfattning av anonym kundnöjdhetsstatistik.
-4. En assistent som läser HR:s rehabiliteringsärenden.
-
-**4.2** Nordverk använder Microsoft 365 och vill bygga en agent som läser
-kundmejl (nivå 3). Skriv tre frågor som du ställer till deras
-IT-administratör innan ni börjar.
-
-**4.3** Skriv tre frågor som du skulle ställa till Aixia innan Nordverk
-skickar riktiga kundärenden till tjänsten.
-
-**4.4** Gå tillbaka till lösningsskissen från övning 1.4 och fyll i
-Säkerhetsnivå och Driftalternativ med motivering.
-
 Nästa kapitel: [Lokala modeller med Ollama](05-lokala-modeller-med-ollama.md)

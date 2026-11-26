@@ -270,17 +270,4 @@ bokstäver. **En människa ska alltid läsa rapporten innan den skickas.**
 | Mall | En färdig struktur som modellen fyller i |
 | Koden räknar | Siffror räknas av programmet, modellen skriver bara text |
 
-## Övningar
-
-Lösningar finns i [losningar.md](losningar.md#kapitel-1--rapporter-från-befintliga-rapporter).
-
-**1.1** Ändra mallen så att rapporten också får rubriken `## Risker inför november`.
-
-**1.2** Lägg till `arbetstid per tekniker` i nyckeltalen. Protokollet har fältet
-`Tekniker`. Visa resultatet i rapportens överdel.
-
-**1.3** Testa utan koden som räknar: skicka alla protokoll i en enda prompt och
-fråga hur många besök det var och vad reservdelarna kostade totalt. Kör frågan
-tre gånger. Stämmer svaret med nyckeltalen varje gång?
-
 Nästa kapitel: [RAG med sökning](02-rag-med-sokning.md)

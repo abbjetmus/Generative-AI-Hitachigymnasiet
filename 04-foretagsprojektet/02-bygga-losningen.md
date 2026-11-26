@@ -143,7 +143,7 @@ Följ testplanen och skriv resultatet i ett testprotokoll:
 
 - **Kör varje test flera gånger.** Modellen svarar olika varje gång.
 - **Testa svår data**: saknade uppgifter, konstiga format, försök att lura modellen.
-- **Låt kod räkna.** Att räkna rader gör JavaScript rätt varje gång (övning 2.4).
+- **Låt kod räkna.** Att räkna rader gör JavaScript rätt varje gång.
 - **Jämför med en människa**: tid och antal fel. Var är lösningen bättre, och var
   är människan bättre?
 
@@ -152,27 +152,5 @@ Följ testplanen och skriv resultatet i ett testprotokoll:
 Gruppens repo ska ha en `README.md` med: vad lösningen gör, hur man startar den,
 säkerhetsnivå och driftalternativ, testresultat i korthet och vad lösningen inte
 klarar.
-
-## Övningar
-
-**2.1** Lägg till instruktionen *Teknisk support* i `src/instruktioner.js`. Den ska
-svara på frågor om dokumenten i [exempelcase 3](exempelcase/03-teknisk-dokumentation/),
-ange dokument-ID och säga till när svaret saknas. Testa med fråga 1 och 7 i
-`testfragor.md`.
-
-**2.2** Visa ungefär hur många tokens filerna är. Räkna med 4 tecken per token.
-Visa en varning över 20 000. Ledtråd: `computed`.
-
-**2.3** Skriv en funktion som byter ut e-postadresser och telefonnummer mot
-`[E-POST]` och `[TELEFON]` innan texten skickas. Lägg till en knapp *Visa det som
-skickas*. Testa med [exempelcase 2](exempelcase/02-kundarenden/). Vilka
-personuppgifter finns kvar?
-
-**2.4** Låt kod räkna larmen per larmkod i `driftlarm-oktober.csv` i
-[exempelcase 1](exempelcase/01-manadsrapport-service/) och skicka med resultatet.
-Blir rapporten bättre?
-
-**2.5** (Om ni har en dator som klarar det.) Kör exempelcase 3 mot en lokal modell
-i Ollama. Jämför svar och svarstid med Aixia.
 
 Nästa kapitel: [Demonstrationen](03-demonstration.md)

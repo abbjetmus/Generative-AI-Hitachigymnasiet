@@ -199,37 +199,4 @@ måste byggas i koden runt modellen. Det fördjupar du i
 | Granska | Be modellen kontrollera sitt eget svar |
 | Prompt injection | Användaren kan lura modellen. Systemprompten är inget lås. |
 
-## Övningar
-
-Gör övningarna i textrutan för systemprompten och i chatten. Lösningsförslag
-finns i [losningar.md](losningar.md#kapitel-4--promptteknik).
-
-**4.1** Assistenten skriver ibland `**fetstil**` med stjärnor, som syns i
-chatten. Lägg till en regel i systemprompten som stoppar det.
-
-**4.2** Använd zero-shot-prompten för sortering. Testa med de här
-meddelandena. Byt sedan till few-shot-prompten och jämför.
-
-1. *"Hur ofta ska vi byta olja i NV-900?"*
-2. *"Fakturan stämmer inte, vi har betalat för mycket."*
-3. *"Skicka offert på tre NV-200."*
-4. *"Pumpen ni lagade i går läcker igen. Inte okej!"*
-
-**4.3** Ställ uträkningsfrågan från avsnittet *Be om steg*, en gång utan och
-en gång med *"Räkna steg för steg och visa uträkningen"*. Vilket svar är
-lättast att kontrollera? Stämmer det?
-
-**4.4** Skriv en systemprompt som gör om ett kundmejl inom `<mejl>`-taggar
-till en punktlista med: kundens namn, vilken pump det gäller och vad kunden
-vill. Testa med mejlet från avsnittet *Avgränsa texten*.
-
-**4.5** Lägg till en knapp **Granska svaret** som skickar granskningsprompten
-från avsnittet *Be modellen granska sitt svar*. Tips: knappen kan sätta
-`fraga.value` och sedan anropa `skicka()`.
-
-**4.6** Gör testet från avsnittet *Prompt injection*. Skicka mejlet tre gånger.
-Ändra en bokstav i mejlet varje gång, annars får du samma sparade svar (se
-kapitel 3). Hur många gånger lyckades attacken? Lägg sedan till de två extra
-raderna i systemprompten och testa igen.
-
 Nästa kapitel: [Strukturerad utdata](05-strukturerad-utdata.md)

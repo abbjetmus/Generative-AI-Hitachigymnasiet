@@ -36,11 +36,6 @@ All kod skriver du i Vue-projektet [`nordverk-chatt`](nordverk-chatt/). Om du
 kör fast finns färdiga filer för varje kapitel i
 [`nordverk-chatt/facit`](nordverk-chatt/facit/).
 
-Lösningsförslag till övningarna finns i [losningar.md](losningar.md). Försök
-själv först!
-
 ## Det här behöver du
 
-- [Node.js](https://nodejs.org/) version 22 eller senare (LTS)
-- [VS Code](https://code.visualstudio.com/)
-- En API-nyckel som du får av läraren
+- En API-nyckel som du får.

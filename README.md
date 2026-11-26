@@ -18,9 +18,7 @@ Till sist får din grupp ett case från ett företag som ni löser och visar upp
 | [04 – Företagsprojektet](04-foretagsprojektet/) | Utred ett case från ett företag, bygg lösningen med företagets testdata och demonstrera den |
 
 Läs modulerna i ordning. Varje modul har en `README.md` med
-innehållsförteckning och numrerade kapitel. Övningarna står i slutet av varje
-kapitel, och lösningsförslagen finns i `losningar.md` i varje modul. Försök
-själv först.
+innehållsförteckning och numrerade kapitel.
 
 ```mermaid
 flowchart LR

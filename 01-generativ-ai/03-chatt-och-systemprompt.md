@@ -176,7 +176,7 @@ långsammare och dyrare blir varje anrop. När fönstret är fullt går det inte
 att skicka mer.
 
 Det enklaste sättet att hålla nere storleken är att bara skicka de senaste
-meddelandena (övning 3.4), eller att börja om med **Ny konversation**.
+meddelandena, eller att börja om med **Ny konversation**.
 
 ## Steg 2 – Streaming
 
@@ -231,8 +231,6 @@ Så fungerar det:
 💡 Modellen resonerar först. Därför står det *Tänker …* en stund innan texten
 börjar komma.
 
-Hela filen finns i [`facit/App-kapitel-3.vue`](nordverk-chatt/facit/App-kapitel-3.vue).
-
 ## Sammanfattning
 
 - Modellen minns inget. Chatten minns för att **hela historiken** skickas med
@@ -241,29 +239,5 @@ Hela filen finns i [`facit/App-kapitel-3.vue`](nordverk-chatt/facit/App-kapitel-
 - **Temperaturen** styr hur mycket slump som används.
 - Allt måste rymmas i **kontextfönstret**.
 - Med **streaming** syns svaret medan det skrivs.
-
-## Övningar
-
-Lösningsförslag finns i
-[losningar.md](losningar.md#kapitel-3--chatt-och-systemprompt).
-
-**3.1** Lägg till ett faktum i systemprompten: Nordverk har två serviceavtal,
-*Bas* (ett servicebesök per år) och *Plus* (två besök per år och förtur vid
-akuta fel). Fråga assistenten om serviceavtal.
-
-**3.2** Ta bort `...meddelanden.value` ur anropet, så att bara systemprompten
-skickas. Vad händer? Hur kan du skicka med bara den senaste frågan? Ändra
-tillbaka efteråt.
-
-**3.3** Lägg till `cache: { 'no-cache': true }` i anropet. Fråga *"Hitta på
-ett namn på en ny pump. Svara bara med namnet."* tre gånger med temperatur 0
-och tre gånger med temperatur 2. Vad är skillnaden?
-
-**3.4** Skicka bara de **sex senaste** meddelandena. Tips:
-`meddelanden.value.slice(-6)` ger de sex sista. Testa genom att säga ditt namn
-först och fråga efter det efter fyra frågor till.
-
-**3.5** Visa hur många meddelanden konversationen har, under chatten. Tips:
-skriv `meddelanden.length` i `<template>`.
 
 Nästa kapitel: [Promptteknik](04-promptteknik.md)

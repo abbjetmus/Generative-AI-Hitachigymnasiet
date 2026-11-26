@@ -188,16 +188,4 @@ inte *skakar*. Ordet måste stämma exakt. Det löser vi i nästa kapitel.
 | Stoppord | Vanliga ord som inte räknas i sökningen |
 | Källhänvisning | Svaret visar vilken text det bygger på |
 
-## Övningar
-
-Lösningar finns i [losningar.md](losningar.md#kapitel-2--rag-med-sökning).
-
-**2.1** Ställ frågorna i tabellen ovan. Ställ sedan samma frågor i
-startsidans assistent, som inte har RAG. Jämför svaren.
-
-**2.2** Visa texten som skickades till modellen. Lägg till en `<details>` under
-varje källa i listan med `{{ t.text }}` inuti.
-
-**2.3** Låt sökningen ge 2 träffar i stället för 3. Blir svaren bättre eller sämre?
-
 Nästa kapitel: [RAG med embeddings](03-rag-med-embeddings.md)

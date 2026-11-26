@@ -14,8 +14,8 @@ vill bygga agenter direkt där. Idén är densamma som i din kod:
 > **Läraren kontrollerar åtkomsten.** Vad du kan göra beror på vilka
 > licenser skolan eller företaget har och vad IT-administratören har slagit
 > på. Logga inte in med ett företagskonto utan lov, och lägg aldrig in
-> riktig företagsdata i en övningsagent. Har du ingen åtkomst kan du göra
-> övningarna på papper.
+> riktig företagsdata i en övningsagent. Har du ingen åtkomst kan du läsa
+> kapitlet och planera agenten på papper.
 
 ## Verktygen
 
@@ -180,48 +180,5 @@ godkänna det som är viktigt.
 - Vad som går beror på licens och på vad administratören har slagit på. Läraren kontrollerar åtkomsten.
 - Agenten ser bara det användaren har behörighet till, men uppladdade filer kan alla användare av agenten se.
 - En Microsoft 365-agent är driftalternativ B. Nivå 4 hör inte hemma där.
-
-## Övningar
-
-**7.1** Planera en agent på papper för ärende K-109 i
-[`kundarenden.json`](../data/nordverk/kundarenden.json) (en kund vill ha
-dokument på engelska). Skriv namn, beskrivning, instruktioner, kunskap och
-tre startfrågor. Vilken säkerhetsnivå har kunskapen?
-
-**7.2** Om du har åtkomst: bygg manualagenten och kör de tre testfallen.
-Lägg till två egna. Hur många gick igenom?
-
-**7.3** Varför ska du inte ladda upp ett dokument med alla kunders priser
-som kunskap i en agent som hela kundtjänsten använder? Vad är ett bättre
-sätt?
-
-**7.4** Jämför manualagenten med en assistent som du byggt i kod. Nämn en
-fördel och en nackdel med varje.
-
-<details>
-<summary>Lösningsförslag</summary>
-
-**7.1** Exempel: *Namn:* Dokumentagent. *Beskrivning:* Hittar manualer och
-dokument som kunder efterfrågar. *Instruktioner:* svara bara utifrån
-kunskapen, ange källa, hänvisa juridiska dokument som CE-försäkran till en
-människa. *Kunskap:* manualerna (nivå 1–2). *Startfrågor:* Finns manualen
-till NV-200 på engelska? Var hittar jag CE-försäkran? Vilka dokument finns
-för NV-400?
-
-**7.2** Beror på agenten. Testfallet med pris ska ge "finns inte i
-manualerna". Om agenten hittar på ett pris: skärp instruktionerna och
-kontrollera att *Only use specified sources* är påslaget.
-
-**7.3** Uppladdade filer kan läsas av alla som använder agenten, och priser
-är nivå 3. Lägg dokumentet i SharePoint med behörighet bara för dem som får
-se priserna. Då visar agenten priserna bara för dem.
-
-**7.4** Agent i Microsoft 365: snabb att bygga, finns där personalen redan
-arbetar, behörigheter följer med. Men man styr mindre, och det kräver licens.
-Egen kod: full kontroll över flöde, test och val av driftalternativ (till
-exempel Aixia eller lokal modell). Men man måste bygga och förvalta allt
-själv.
-
-</details>
 
 Nästa kapitel: [Modul 03 – AI-lösningar för företag](../03-ai-losningar-for-foretag/README.md)

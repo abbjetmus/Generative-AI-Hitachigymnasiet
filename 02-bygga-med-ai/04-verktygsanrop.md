@@ -241,15 +241,4 @@ Lägg till `import Verktyg from './Verktyg.vue'` och `<Verktyg />` i `App.vue`.
 | Strukturerad utdata | Modellen svarar med JSON enligt ett schema |
 | `enum` | Fältet får bara ha ett av de listade värdena |
 
-## Övningar
-
-Lösningar finns i [losningar.md](losningar.md#kapitel-4--verktygsanrop).
-
-**4.1** Ställ frågorna i tabellen. Fråga sedan om ett serienummer som inte finns,
-till exempel `NV200-2020-9999`. Vad svarar assistenten?
-
-**4.2** Lägg till en tredje funktion, `sokIManualer(fraga)`, som använder
-`nyckelordssok` från kapitel 2 och returnerar texten i träffarna. Glöm inte
-beskrivningen. Fråga *"Hur mycket väger en NV-900?"*.
-
 Nästa kapitel: [Agenter](05-agenter.md)

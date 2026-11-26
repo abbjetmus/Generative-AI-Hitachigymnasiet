@@ -194,18 +194,4 @@ felkoder och artikelnummer. Många system använder båda.
 | Vektorsökning | Hitta de chunkar vars vektorer liknar frågans |
 | Gräns | Lägsta likhet som räknas som träff |
 
-## Övningar
-
-Lösningar finns i [losningar.md](losningar.md#kapitel-3--rag-med-embeddings).
-
-**3.1** Ställ frågorna i tabellen med båda sökmetoderna. Hitta på en egen fråga
-där nyckelord fungerar bättre.
-
-**3.2** Ändra `GRANS` till 0,3 och sedan 0,7. Vad händer med frågan om
-fotbolls-VM och med frågan om E06?
-
-**3.3** Lägg in serviceprotokollen i sökningen, så att du kan fråga
-*"Vilken kund hade problem med fukt?"*. Tips: `serviceprotokoll` finns i
-`nordverk.js` och har samma form som `manualer`.
-
 Nästa kapitel: [Verktygsanrop](04-verktygsanrop.md)
