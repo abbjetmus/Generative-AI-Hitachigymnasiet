@@ -15,7 +15,7 @@ Kursen använder **Aixia**, en svensk leverantör som kör modellen
 OpenAI:s JavaScript-paket `openai`.
 
 För att få använda API:t behöver du en **API-nyckel**, en lång hemlig text som
-börjar med `sk-`. Du får en nyckel per grupp av läraren.
+börjar med `sk-`.
 
 ⚠️ **En API-nyckel är som ett lösenord.** Allt som görs med den räknas som
 gjort av dig. Den får aldrig:
@@ -29,8 +29,6 @@ gjort av dig. Den får aldrig:
 
 Du behöver:
 
-- [Node.js](https://nodejs.org/), version 22 eller senare. Välj **LTS**.
-- [VS Code](https://code.visualstudio.com/).
 - Kursens repo på din dator (klona det med git eller ladda ner det som zip).
 
 ## Steg 2 – Lägg in nyckeln i .env

@@ -132,25 +132,4 @@ En bra tumregel: **språkmodellen föreslår, människan bestämmer.**
 - Den kan hallucinera, har en kunskapsgräns, kan vara snedvriden och ser bara
   det som ryms i kontextfönstret.
 
-## Övningar
-
-Gör övningarna utan dator, gärna två och två. Lösningsförslag finns i
-[losningar.md](losningar.md#kapitel-1--vad-är-generativ-ai).
-
-**1.1** Förklara med egna ord skillnaden mellan AI, maskininlärning och
-generativ AI. Ge ett eget exempel på varje.
-
-**1.2** Spela språkmodell. Skriv tre tokens som kan komma efter *"Tack för
-ditt mejl. Vi skickar en tekniker på"*. Vilken är mest sannolik?
-
-**1.3** Du frågar en språkmodell efter telefonnumret till Nordverks
-kundtjänst. Den svarar direkt med ett nummer. Varför ska du inte lita på det?
-
-**1.4** Vilka av uppgifterna passar för en språkmodell? Motivera kort.
-
-1. Föreslå ett svar på ett argt kundmejl, som en människa läser innan det skickas.
-2. Räkna ut exakt hur många servicebesök Nordverk gjorde i oktober.
-3. Sammanfatta en tio sidor lång manual.
-4. Bestämma vilken sökande som ska få jobbet som tekniker.
-
 Nästa kapitel: [Kom igång](02-kom-igang.md)

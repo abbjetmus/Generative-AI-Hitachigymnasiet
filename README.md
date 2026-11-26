@@ -44,7 +44,7 @@ utan *om* och *var* det är lämpligt att bygga, utifrån datans säkerhetsnivå
 ## AI-tjänsten: Aixia
 
 Kodexemplen använder språkmodeller hos **Aixia** via ett API som fungerar som
-OpenAI:s. Läraren delar ut en nyckel per grupp.
+OpenAI:s.
 
 | Modell | Används till |
 |--------|--------------|
@@ -58,7 +58,7 @@ byter du bara adress och modellnamn i `.env`, se modul 03.
 
 1. Installera [Node.js](https://nodejs.org/) version 22 eller senare (LTS) och [VS Code](https://code.visualstudio.com/).
 2. Klona repot och öppna det i VS Code.
-3. Kopiera `.env.example` till `.env` i repots rotmapp och fyll i nyckeln du fått av läraren.
+3. Kopiera `.env.example` till `.env` i repots rotmapp och fyll i nyckeln du fått.
 4. Kör `npm install` i rotmappen.
 5. Börja med [modul 01](01-generativ-ai/).
 
@@ -76,7 +76,7 @@ och aldrig i kod som körs i webbläsaren.
 - Vue-projekten skickar sina anrop via utvecklingsservern. Den lägger på
   nyckeln på din dator, så nyckeln syns aldrig i webbläsaren. Hur det fungerar
   står i [`gemensam/ai-vite.js`](gemensam/ai-vite.js) och förklaras i modul 01.
-- Har nyckeln hamnat på fel ställe ska du säga till läraren direkt, så att den
+- Har nyckeln hamnat på fel ställe ska du säga till direkt, så att den
   kan spärras.
 
 ## Mappar
@@ -86,10 +86,3 @@ och aldrig i kod som körs i webbläsaren.
 | `gemensam/` | AI-klienten för Node-skript (`ai.js`), Vite-pluginet som skyddar nyckeln (`ai-vite.js`) och en mall för nya Vue-projekt (`vue-mall/`) |
 | `data/nordverk/` | Påhittade manualer, serviceprotokoll och kundärenden |
 | `presentation/` | Introduktionspresentation om generativ AI |
-
-## Inspiration
-
-Upplägget är inspirerat av Microsofts kurs
-[Generative AI with JavaScript](https://github.com/microsoft/generative-ai-with-javascript),
-som tar upp liknande ämnen i en annan form. Den finns på engelska om du vill
-läsa vidare.
