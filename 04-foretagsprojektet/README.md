@@ -41,7 +41,6 @@ flowchart LR
 
 I modulen finns också ett [startprojekt](startprojekt/) i Vue,
 [mallar](mallar/) och tre [exempelcase](exempelcase/) med påhittad data.
-Lärarstöd till exempelcasen finns i [lararstod.md](lararstod.md).
 
 ## Arbete i grupp
 
